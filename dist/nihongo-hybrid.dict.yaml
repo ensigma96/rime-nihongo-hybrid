@@ -1,0 +1,11 @@
+# nihong-hybrid.dict.yaml
+# encoding: utf-8
+
+---
+name: nihongo-hybrid
+version: '0.1'
+
+import_tables:
+  - 'nihongo-hybrid.dict/nihongo-hybrid.roman'
+  - 'nihongo-hybrid.dict/nihongo-hybrid.mozc'
+...
