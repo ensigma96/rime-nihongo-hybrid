@@ -1,0 +1,11 @@
+# Rime dictionary
+# converted from dictionaries of mozc (https://github.com/google/mozc)
+#
+# encoding: utf-8
+
+---
+name: nihongo-hybrid.mozc
+version: "0.1"
+sort: by_weight
+...
+
