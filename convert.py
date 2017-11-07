@@ -62,7 +62,6 @@ def kana2hepburn(str):
     for i in reversed(range(len(char_list))):
         if flag_skip:
             flag_skip = False
-            curr_prefix = ''
         else:
             if char_list[i] == 'っ':
                     curr_roman = curr_prefix if curr_prefix else 't'
@@ -78,7 +77,7 @@ def kana2hepburn(str):
                         curr_roman = small_forms[char_list[i]]['roman']
                     else:
                         curr_roman = youon[char_list[i - 1] + char_list[i]]['roman']
-                        curr_prefix = gojuuon[char_list[i - 1]]['roman']
+                        curr_prefix = gojuuon[char_list[i - 1]]['prefix']
                         flag_skip = True
                 else:
                     curr_roman = char_list[i]
@@ -88,4 +87,4 @@ def kana2hepburn(str):
 if __name__ == '__main__':
     print(kana2hepburn('うぉーるなっと'))
     print(kana2hepburn('おっぱい'))
-    print(kana2hepburn('いんむ'))
+    print(kana2hepburn('いっしょ'))
