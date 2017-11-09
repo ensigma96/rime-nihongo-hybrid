@@ -8,6 +8,8 @@ schema:
   version: "0.1"
   author:
     - ensigma96 <ensigma96@gmail.com>
+  dependencies:
+    - luna_pinyin # for using reverse lookup
 
 switches:
   - name: ascii_mode
@@ -61,10 +63,14 @@ translator:
     - 'xlit|q|ー|'
 
 reverse_lookup:
-  dictionary: liangfen
-  enable_completion: true
+  dictionary: luna_pinyin
   prefix: "`"
-  tips: 〔LiangFen〕
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
 
 punctuator:
   import_preset: default
