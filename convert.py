@@ -3,7 +3,7 @@
 # All は, へ and を -> "ha", "he" and "wo" respectively.
 # Could have other bugs.
 
-import hepburn
+import roman_data
 
 def kana2hepburn(str):
     result = ''
@@ -19,17 +19,17 @@ def kana2hepburn(str):
                     curr_roman = curr_prefix if curr_prefix else 't'
             else:
                 curr_prefix = ''
-                if char_list[i] in hepburn.gojuuon:
-                    curr_roman = hepburn.gojuuon[char_list[i]]['roman']
-                    curr_prefix = hepburn.gojuuon[char_list[i]]['prefix']
+                if char_list[i] in roman_data.gojuuon:
+                    curr_roman = roman_data.gojuuon[char_list[i]]['roman']
+                    curr_prefix = roman_data.gojuuon[char_list[i]]['prefix']
                 elif char_list[i] == 'ー':
                     curr_roman = '-'
-                elif char_list[i] in hepburn.small_forms:
-                    if i == 0 or ((char_list[i - 1] + char_list[i]) not in hepburn.youon):
-                        curr_roman = hepburn.small_forms[char_list[i]]['roman']
+                elif char_list[i] in roman_data.small_forms:
+                    if i == 0 or ((char_list[i - 1] + char_list[i]) not in roman_data.youon):
+                        curr_roman = roman_data.small_forms[char_list[i]]['roman']
                     else:
-                        curr_roman = hepburn.youon[char_list[i - 1] + char_list[i]]['roman']
-                        curr_prefix = hepburn.gojuuon[char_list[i - 1]]['prefix']
+                        curr_roman = roman_data.youon[char_list[i - 1] + char_list[i]]['roman']
+                        curr_prefix = roman_data.youon[char_list[i - 1] + char_list[i]]['prefix']
                         flag_skip = True
                 else:
                     curr_roman = char_list[i]
