@@ -1,6 +1,9 @@
 from lxml import etree
+import os
 
-tree = etree.parse('src/hepburn.xml')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+tree = etree.parse(dir_path + '/' + 'hepburn.xml')
+
 gojuuon = {}
 small_forms = {}
 youon = {}
