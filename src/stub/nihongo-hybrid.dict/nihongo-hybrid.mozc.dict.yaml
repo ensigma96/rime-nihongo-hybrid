@@ -2,6 +2,7 @@
 # converted from dictionaries of mozc (https://github.com/google/mozc)
 #
 # encoding: utf-8
+# vim: set noet:
 
 ---
 name: nihongo-hybrid.mozc
