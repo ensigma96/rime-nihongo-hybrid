@@ -1,6 +1,14 @@
 # rime-nihongo-hybrid
-A Japanese input schema for [RIME](http://rime.im/), converted from [mozc](https://github.com/google/mozc)'s dictionary. See https://github.com/google/mozc/blob/master/src/data/dictionary_oss/README.txt for license.
+A Japanese input scheme & dictionary for [RIME](http://rime.im/). The dictionary is converted from [mozc](https://github.com/google/mozc)'s ones. See https://github.com/google/mozc/blob/master/src/data/dictionary_oss/README.txt for license.
 
-Usage: copy everything in `dist/` into RIME's user directory, and they should be ready for deployment. Deployment methods and the location of user directory are platform dependent. See RIME's [CustomizationGuide](https://github.com/rime/home/wiki/CustomizationGuide) for more information.
+## Usage
+### 1. Copy the files
+Copy everything under `dist/` into Rime's user folder. Example: the user folder is `~/.config/ibus/rime/`, then `cp -vr dist/. ~/.config/ibus/rime/` will do the work.
 
-Currently only supports Hepburn-like romanization. Could be buggy; use at your own risk.
+The location of user directory is related to specific input methods (i.e. frontends of Rime). In most cases, information about it can be found either in Rime's [Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide) or in the documentation of the input method.
+
+### 2. Deploy
+Deployment also varies across input methods. Usually, you can also find information in Rime's Customization Guide, or in the input method's documentation.
+
+### Legacy Mode
+If your input method is using an ancient version of librime (hence an ancient version (<1.0) of opencc), then the json config may not be supported. In that case rename `main.conf.example` to `main.conf`, and modify `main.conf`, setting `OPENCC_LEGACY_MODE` to 1. Then execute `./main.sh` and perform step 1 & 2.
