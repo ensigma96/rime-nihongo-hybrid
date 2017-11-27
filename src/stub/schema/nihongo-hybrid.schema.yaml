@@ -5,7 +5,7 @@
 schema:
   schema_id: nihongo-hybrid
   name: nihongo-hybrid
-  version: "0.1"
+  version: "0.2"
   author:
     - ensigma96 <ensigma96@gmail.com>
   dependencies:
