@@ -8,7 +8,7 @@ Copy everything under `dist/` into Rime's user folder. Example: the user folder 
 The location of user directory is related to specific input methods (i.e. frontends of Rime). In most cases, information about it can be found either in Rime's [Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide) or in the documentation of the input method.
 
 ### 2. Deploy
-Deployment also varies across input methods. Usually, you can also find information in Rime's Customization Guide, or in the input method's documentation.
+Deployment also varies across input methods. Usually, you can also find information in the same place(s) above.
 
-### Legacy Mode
+### Note
 If your input method is using an ancient version of librime, hence an ancient version (<1.0) of opencc, then the json config may not be supported. This will at least make the `simplifier`'s `jp_variants` option ineffectual.
