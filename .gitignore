@@ -11,7 +11,7 @@ __pycache__/
 env/
 build/
 develop-eggs/
-#dist/
+# dist/
 downloads/
 eggs/
 .eggs/
@@ -99,6 +99,3 @@ ENV/
 
 # mypy
 .mypy_cache/
-
-# config file
-main.conf
