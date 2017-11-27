@@ -1,4 +1,8 @@
 # rime-nihongo-hybrid
+
+- 简体中文版指南 [→](https://github.com/ensigma96/rime-nihongo-hybrid/blob/master/README_zh-Hans.md)
+- 繁體中文版指南 [→](https://github.com/ensigma96/rime-nihongo-hybrid/blob/master/README_zh-Hant.md)
+
 A Japanese input scheme & dictionary for [RIME](http://rime.im/). The dictionary is converted from [mozc](https://github.com/google/mozc)'s ones. See https://github.com/google/mozc/blob/master/src/data/dictionary_oss/README.txt for license.
 
 ## Usage
