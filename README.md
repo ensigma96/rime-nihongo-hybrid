@@ -11,4 +11,4 @@ The location of user directory is related to specific input methods (i.e. fronte
 Deployment also varies across input methods. Usually, you can also find information in Rime's Customization Guide, or in the input method's documentation.
 
 ### Legacy Mode
-If your input method is using an ancient version of librime (hence an ancient version (<1.0) of opencc), then the json config may not be supported. In that case rename `main.conf.example` to `main.conf`, and modify `main.conf`, setting `OPENCC_LEGACY_MODE` to 1. Then execute `./main.sh` and perform step 1 & 2.
+If your input method is using an ancient version of librime, hence an ancient version (<1.0) of opencc, then the json config may not be supported. This will at least make the `simplifier`'s `jp_variants` option ineffectual.

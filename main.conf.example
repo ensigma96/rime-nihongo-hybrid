@@ -1,5 +1,0 @@
-# Which opencc conversion mode to use for simplifier in schema
-# 0: src/stub/opencc/t2jp.json (Japanese Kyuujitai to Shinjitai) in this repo.
-# 1: legacy mode (Traditional Chinese to Simplified Chinese).
-# Defaults to 0.
-OPENCC_LEGACY_MODE=0

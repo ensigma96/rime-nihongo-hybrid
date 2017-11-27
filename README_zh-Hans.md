@@ -10,5 +10,5 @@
 ### 二、部署
 完成复制后，即可部署。部署方法同样因具体输入法而异，一般也可在 Rime 定制指南或相应输入法的文档中找到。
 
-### 复古模式
-若您的输入法所用 librime 版本过旧（从而 opencc 版本过旧（低于 1.0）），则 json 配置可能不被支持。在此情况下，请将 `main.conf.example` 重命名为 `main.conf`，并修改 `main.conf`，设置 `OPENCC_LEGACY_MODE` 为 1。然后执行 `./main.sh`，再按照步骤一、二做即可。
+### 注意
+若您的输入法所用 librime 版本过旧，从而 opencc 版本过旧（低于 1.0），则 json 配置不被支持。这至少会使 `simplifier` 的 `jp_variants` 开关处于无效状态。
