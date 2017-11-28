@@ -2,7 +2,7 @@
 # vim: set noet:
 
 ---
-name: nihongo-hybrid.roman
+name: nihongo-hybrid.kana
 version: "0.2"
 sort: by_weight
 ...
