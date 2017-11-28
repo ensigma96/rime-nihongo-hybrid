@@ -10,29 +10,29 @@ def kana2hepburn(str):
     curr_prefix = ''
     curr_roman = ''
     flag_skip = False
-    char_list = list(str)
-    for i in reversed(range(len(char_list))):
+    for i in reversed(range(len(str))):
+        curr_char = str[i]
         if flag_skip:
             flag_skip = False
         else:
-            if char_list[i] == 'っ':
+            if curr_char == 'っ':
                     curr_roman = curr_prefix if curr_prefix else 't'
             else:
                 curr_prefix = ''
-                if char_list[i] in roman_data.gojuuon:
-                    curr_roman = roman_data.gojuuon[char_list[i]]['roman']
-                    curr_prefix = roman_data.gojuuon[char_list[i]]['prefix']
-                elif char_list[i] == 'ー':
+                if curr_char in roman_data.gojuuon:
+                    curr_roman = roman_data.gojuuon[curr_char]['roman']
+                    curr_prefix = roman_data.gojuuon[curr_char]['prefix']
+                elif curr_char == 'ー':
                     curr_roman = '-'
-                elif char_list[i] in roman_data.small_forms:
-                    if i == 0 or ((char_list[i - 1] + char_list[i]) not in roman_data.youon):
-                        curr_roman = roman_data.small_forms[char_list[i]]['roman']
+                elif curr_char in roman_data.small_forms:
+                    if i == 0 or ((str[i - 1] + curr_char) not in roman_data.youon):
+                        curr_roman = roman_data.small_forms[curr_char]['roman']
                     else:
-                        curr_roman = roman_data.youon[char_list[i - 1] + char_list[i]]['roman']
-                        curr_prefix = roman_data.youon[char_list[i - 1] + char_list[i]]['prefix']
+                        curr_roman = roman_data.youon[str[i - 1] + curr_char]['roman']
+                        curr_prefix = roman_data.youon[str[i - 1] + curr_char]['prefix']
                         flag_skip = True
                 else:
-                    curr_roman = char_list[i]
+                    curr_roman = curr_char
             result = curr_roman + result
     return result
 
