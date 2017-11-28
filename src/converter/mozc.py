@@ -1,4 +1,4 @@
-from convert import kana2hepburn
+from kana2rom import hiragana2hepburn
 import os
 import sys
 
@@ -18,7 +18,7 @@ def convert_file(filename):
             if temp_word != prev_word or temp_kana != prev_kana:
                 prev_word = temp_word
                 prev_kana = temp_kana
-                print(temp_word + '\t' + kana2hepburn(temp_kana))
+                print(temp_word + '\t' + hiragana2hepburn(temp_kana))
 
 def main():
     for filename in sorted(os.listdir(mozc_dict_dir)):

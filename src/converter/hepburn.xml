@@ -306,6 +306,21 @@
       <prefix></prefix>
     </entry>
     <entry>
+      <kana>や</kana>
+      <roman>ya</roman>
+      <prefix></prefix>
+    </entry>
+    <entry>
+      <kana>ゆ</kana>
+      <roman>yu</roman>
+      <prefix></prefix>
+    </entry>
+    <entry>
+      <kana>よ</kana>
+      <roman>yo</roman>
+      <prefix></prefix>
+    </entry>
+    <entry>
       <kana>ら</kana>
       <roman>ra</roman>
       <prefix>r</prefix>
@@ -329,21 +344,6 @@
       <kana>ろ</kana>
       <roman>ro</roman>
       <prefix>r</prefix>
-    </entry>
-    <entry>
-      <kana>や</kana>
-      <roman>ya</roman>
-      <prefix></prefix>
-    </entry>
-    <entry>
-      <kana>ゆ</kana>
-      <roman>yu</roman>
-      <prefix></prefix>
-    </entry>
-    <entry>
-      <kana>よ</kana>
-      <roman>yo</roman>
-      <prefix></prefix>
     </entry>
     <entry>
       <kana>わ</kana>
@@ -415,6 +415,10 @@
     <entry>
       <kana>ゖ</kana>
       <roman>_ke</roman>
+    </entry>
+    <entry>
+      <kana>っ</kana>
+      <roman>_tsu</roman>
     </entry>
   </small_forms>
   <youon>
