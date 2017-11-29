@@ -3,7 +3,7 @@
 
 ---
 name: nihongo-hybrid
-version: '0.2'
+version: '0.3'
 
 import_tables:
   - 'nihongo-hybrid.dict/nihongo-hybrid.kana'
