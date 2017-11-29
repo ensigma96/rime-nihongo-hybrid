@@ -10,7 +10,7 @@ class _data:
         self.youon = {}
 
         if style == 'hepburn':
-            tree = etree.parse(dir_path + '/' + 'hepburn.xml')
+            tree = etree.parse(dir_path + '/' + 'romanization_data/hepburn.xml')
 
         for entry_elem in tree.xpath('//gojuuon/entry'):
             kana = (entry_elem.xpath('kana'))[0].text

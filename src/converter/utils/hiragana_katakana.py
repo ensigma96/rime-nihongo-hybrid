@@ -2,7 +2,7 @@ from lxml import etree
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-tree = etree.parse(dir_path + '/' + 'kana_forms.xml')
+tree = etree.parse(dir_path + '/' + 'hiragana_katakana.xml')
 tups = []
 for entry_elem in tree.xpath('//entry'):
     tups.append((entry_elem.xpath('hiragana')[0].text, entry_elem.xpath('katakana')[0].text))

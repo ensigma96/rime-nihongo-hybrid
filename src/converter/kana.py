@@ -1,7 +1,7 @@
-from utils import romanization_data
-from utils import kana_form_conv
+from utils.romanization_data import hepburn
+from utils.hiragana_katakana import hiragana2katakana
 
-x = romanization_data.hepburn
+x = hepburn
 
 def small_forms(func):
     for item in x.small_forms:
@@ -34,7 +34,7 @@ def youon_with_sokuon(func):
 
 def print_both(f):
     f(lambda x: x)
-    f(kana_form_conv.hiragana2katakana)
+    f(hiragana2katakana)
 
 print('# Small forms')
 print_both(small_forms)
