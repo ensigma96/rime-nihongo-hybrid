@@ -1,33 +1,35 @@
-import hepburn_data
-import kana_form_conv
+from utils import romanization_data
+from utils import kana_form_conv
+
+x = romanization_data.hepburn
 
 def small_forms(func):
-    for item in hepburn_data.small_forms:
-        print(func(item), hepburn_data.small_forms[item]['roman'], sep = '\t')
+    for item in x.small_forms:
+        print(func(item), x.small_forms[item]['roman'], sep = '\t')
     print('')
 
 def gojuuon(func):
-    for item in hepburn_data.gojuuon:
-        print(func(item), hepburn_data.gojuuon[item]['roman'], sep = '\t')
+    for item in x.gojuuon:
+        print(func(item), x.gojuuon[item]['roman'], sep = '\t')
     print('')
 
 def youon(func):
-    for item in hepburn_data.youon:
-        print(func(item), hepburn_data.youon[item]['roman'], sep = '\t')
+    for item in x.youon:
+        print(func(item), x.youon[item]['roman'], sep = '\t')
     print('')
 
 def sokuon(func):
-    for item in hepburn_data.gojuuon:
-        prefix = hepburn_data.gojuuon[item]['prefix']
+    for item in x.gojuuon:
+        prefix = x.gojuuon[item]['prefix']
         if prefix:
-            print(func('っ' + item),  prefix + hepburn_data.gojuuon[item]['roman'], sep = '\t')
+            print(func('っ' + item),  prefix + x.gojuuon[item]['roman'], sep = '\t')
     print('')
 
 def youon_with_sokuon(func):
-    for item in hepburn_data.youon:
-        prefix = hepburn_data.youon[item]['prefix']
+    for item in x.youon:
+        prefix = x.youon[item]['prefix']
         if prefix:
-            print(func('っ' + item),  prefix + hepburn_data.youon[item]['roman'], sep = '\t')
+            print(func('っ' + item),  prefix + x.youon[item]['roman'], sep = '\t')
     print('')
 
 def print_both(f):
