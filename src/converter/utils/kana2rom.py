@@ -41,8 +41,3 @@ def hiragana2rom(str, style):
                     curr_roman = curr_char
             result = curr_roman + result
     return result
-
-if __name__ == '__main__':
-    print(hiragana2rom('うぉーるなっと', style = 'hepburn'))
-    print(hiragana2rom('おっぱい', style = 'hepburn'))
-    print(hiragana2rom('いっしょ', style = 'hepburn'))

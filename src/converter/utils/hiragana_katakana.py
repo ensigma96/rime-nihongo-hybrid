@@ -30,6 +30,3 @@ def hiragana2katakana(str):
     for char in str:
         result += hiragana2katakana_c(char)
     return result
-
-if __name__ == '__main__':
-    print(katakana2hiragana('ファ 0 ぱ'))
