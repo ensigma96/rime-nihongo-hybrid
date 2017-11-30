@@ -79,9 +79,6 @@ simplifier:
 punctuator:
   import_preset: default
 
-menu:
-  page_size: 6
-
 key_binder:
   import_preset: default
 
