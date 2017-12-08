@@ -1,0 +1,13 @@
+# Rime dictionary
+# Converted from [JMdict](http://www.edrdg.org/jmdict/j_jmdict.html) dictionary files.
+# These files are the property of the [Electronic Dictionary Research and Development Group](http://www.edrdg.org/), and are used in conformance with the Group's [licence](http://www.edrdg.org/edrdg/licence.html).
+#
+# encoding: utf-8
+# vim: set noet:
+
+---
+name: nihongo-hybrid.jmdict
+version: "0.3"
+sort: by_weight
+...
+
