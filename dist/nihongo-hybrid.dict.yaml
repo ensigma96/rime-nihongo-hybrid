@@ -7,5 +7,6 @@ version: '0.3'
 
 import_tables:
   - 'nihongo-hybrid.dict/nihongo-hybrid.kana'
+  - 'nihongo-hybrid.dict/nihongo-hybrid.jmdict'
   - 'nihongo-hybrid.dict/nihongo-hybrid.mozc'
 ...
