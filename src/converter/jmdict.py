@@ -13,6 +13,10 @@ def gen_freq(pri_list):
             result += 20
         elif item == 'spec2':
             result += 10
+        elif item == 'ichi1':
+            result += 200
+        elif item == 'ichi2':
+            result += 100
     return result
 
 jmdict = sys.argv[1]
