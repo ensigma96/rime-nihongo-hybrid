@@ -5,9 +5,15 @@ import sys
 
 # foolish way to generate fake word frequency
 def gen_freq(pri_list):
+    result = 0
     for item in pri_list:
         if item[:2] == 'nf':
-            return 100 - int(item[-2:])
+            result += 100 - int(item[-2:])
+        elif item == 'spec1':
+            result += 20
+        elif item == 'spec2':
+            result += 10
+    return result
 
 jmdict = sys.argv[1]
 tree = etree.parse(jmdict)
@@ -45,9 +51,6 @@ for entry in tree.xpath('/JMdict/entry'):
             # suppress middot in romanized word
             final_list.append({'word': reb_text, 'roman': hiragana2rom(katakana2hiragana(reb_text.replace('・', '')), style = 'hepburn'), 'freq': gen_freq(r['re_pri_list'])})
         else:
-            # if (not k_list) or has_katakana(reb_text) or r['priority']:
-            if (not k_list) or r['re_pri_list']:
-                final_list.append({'word': reb_text, 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': gen_freq(r['re_pri_list'])})
             if r['re_restr_list']:
                 for k in k_list:
                     freq = ''
@@ -61,6 +64,8 @@ for entry in tree.xpath('/JMdict/entry'):
                     if r['re_pri_list']:
                         freq = gen_freq(k['ke_pri_list'])
                     final_list.append({'word': k['keb_text'], 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': freq})
+            if (not k_list) or r['re_pri_list']:
+                final_list.append({'word': reb_text, 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': gen_freq(r['re_pri_list'])})
 
 for item in final_list:
     if item['freq']:
