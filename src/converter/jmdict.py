@@ -50,11 +50,17 @@ for entry in tree.xpath('/JMdict/entry'):
                 final_list.append({'word': reb_text, 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': gen_freq(r['re_pri_list'])})
             if r['re_restr_list']:
                 for k in k_list:
+                    freq = ''
                     if k['keb_text'] in re_restr_list:
-                        final_list.append({'word': k['keb_text'], 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': gen_freq(k['ke_pri_list'])})
+                        if r['re_pri_list']:
+                            freq = gen_freq(k['ke_pri_list'])
+                        final_list.append({'word': k['keb_text'], 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': freq})
             else:
                 for k in k_list:
-                    final_list.append({'word': k['keb_text'], 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': gen_freq(k['ke_pri_list'])})
+                    freq = ''
+                    if r['re_pri_list']:
+                        freq = gen_freq(k['ke_pri_list'])
+                    final_list.append({'word': k['keb_text'], 'roman': hiragana2rom(katakana2hiragana(reb_text), style = 'hepburn'), 'freq': freq})
 
 for item in final_list:
     if item['freq']:
