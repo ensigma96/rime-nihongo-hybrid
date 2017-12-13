@@ -6,8 +6,8 @@
 from .romanization_data import hepburn
 from warnings import warn
 
-def hiragana2rom(str, style):
-    if style == 'hepburn':
+def hiragana2rom(str, style = None):
+    if (style == 'hepburn') or (style == None):
         rom = hepburn
     else:
         warn(' No such romanization style, defaulting to hepburn.')
