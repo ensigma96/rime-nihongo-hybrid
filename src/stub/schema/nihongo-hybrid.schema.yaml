@@ -74,7 +74,7 @@ reverse_lookup:
 
 simplifier:
   option_name: jp_variants
-  opencc_config: t2jp.json
+  opencc_config: jp_t2s.json
 
 punctuator:
   import_preset: default
