@@ -1,5 +1,5 @@
 # rime-nihongo-hybrid
-[RIME](http://rime.im/) 日语输入方案及词库，词库部分由开源输入法 [mozc](https://github.com/google/mozc) 的词典转换而来。关于词典的授权，可参阅 https://github.com/google/mozc/blob/master/src/data/dictionary_oss/README.txt 。
+[RIME](http://rime.im/) 日语输入方案及词库。
 
 ## 使用方法
 ### 一、复制文件
@@ -12,3 +12,12 @@
 
 ### 注意
 若您的输入法所用 librime 版本过旧，从而 opencc 版本过旧（低于 1.0），则 json 配置不被支持。这至少会使 `simplifier` 的 `jp_variants` 开关处于无效状态。
+
+## 许可协议
+* 除 `src/data` 下的文件外，其余文件均按照 MIT License 发布。
+* `src/data/JMdict/JMdict_e.xml` 文件来自 [JMdict](http://www.edrdg.org/jmdict/j_jmdict.html)，按照 CC BY-SA 3.0 许可协议发布，参见 http://www.edrdg.org/edrdg/licence.html 。
+  `dist/nihongo-hybrid.dict/nihongo-hybrid.jmdict.dict.yaml` 由上述文件转换而得。
+* `src/data/mozc_dictionaries` 下的文件来自开源输入法 [mozc](https://github.com/google/mozc)，授权信息见 `src/data/mozc_dictionaries/README.txt`。
+  `dist/nihongo-hybrid.dict/nihongo-hybrid.mozc.dict.yaml` 由上述文件转换而得。
+* `src/data/opencc/JPVariants.ocd` 来自 [OpenCC](https://github.com/BYVoid/OpenCC)，按照 Apache License 2.0 发布。
+  `dist/opencc/JPVariants.ocd` 与上述文件相同。
