@@ -22,7 +22,8 @@ def convert_file(filename):
 
 def main():
     for filename in sorted(os.listdir(mozc_dict_dir)):
-        convert_file(mozc_dict_dir + '/' + filename)
+        if filename[:10] == 'dictionary':
+            convert_file(mozc_dict_dir + '/' + filename)
 
 if __name__ == '__main__':
     main()
