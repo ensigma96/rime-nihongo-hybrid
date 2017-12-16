@@ -7,6 +7,7 @@ tups = []
 for entry_elem in tree.xpath('//entry'):
     tups.append((entry_elem.xpath('hiragana')[0].text, entry_elem.xpath('katakana')[0].text))
 
+# characters
 def katakana2hiragana_c(char):
     for tup in tups:
         if (char == tup[1]):
@@ -19,6 +20,13 @@ def hiragana2katakana_c(char):
             return tup[1]
     return char
 
+def is_katakana(char):
+    for tup in tups:
+        if (char == tup[1]):
+            return True
+    return False
+
+# strings
 def katakana2hiragana(str):
     result = ''
     for char in str:
@@ -30,3 +38,9 @@ def hiragana2katakana(str):
     for char in str:
         result += hiragana2katakana_c(char)
     return result
+
+def has_katakana(str):
+    for char in str:
+        if is_katakana(char):
+                return True
+    return False
