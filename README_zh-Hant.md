@@ -15,10 +15,8 @@
 
 ## 許可協議
 * 除 `src/data` 及 `dist` 下的文件外，其餘文件均按照 MIT License 發佈。
-* `src/data/JMdict/JMdict_e.xml` 文件來自 [JMdict](http://www.edrdg.org/jmdict/j_jmdict.html)，按照 CC BY-SA 3.0 許可協議发布，参见 http://www.edrdg.org/edrdg/licence.html 。
-  `dist/nihongo-hybrid.dict/nihongo-hybrid.jmdict.dict.yaml` 由上述文件轉換而得。
-* `src/data/mozc_dictionaries` 下的文件來自開源輸入法 [mozc](https://github.com/google/mozc)，授權信息見 `src/data/mozc_dictionaries/README.txt`。
-  `dist/nihongo-hybrid.dict/nihongo-hybrid.mozc.dict.yaml` 由上述文件轉換而得。
-* `src/data/opencc/JPVariants.ocd` 來自 [OpenCC](https://github.com/BYVoid/OpenCC)，按照 Apache License 2.0 發佈。
-  `dist/opencc/JPVariants.ocd` 與上述文件相同。
-* `src/data/internet-jp-forms.num` 來自該 [文件](http://corpus.leeds.ac.uk/frqc/internet-jp-forms.num)，用於生成詞頻，按照 [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) 許可協議發佈.
+* `src/data` 下的文件：
+  * `JMdict/JMdict_e.xml` 由 [JMDict Project](http://www.edrdg.org/jmdict/j_jmdict.html) 按 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 許可協議發佈，参见 http://www.edrdg.org/edrdg/licence.html 。
+  * `mozc_dictionaries` 目錄下的文件來自開源輸入法 [mozc](https://github.com/google/mozc)，授權信息見該目錄下的 `README.txt`。
+  * `opencc/JPVariants.ocd` 來自 [OpenCC](https://github.com/BYVoid/OpenCC)。 OpenCC 按照 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 發佈。
+  * `internet-jp-forms.num` 來自該 [文件](http://corpus.leeds.ac.uk/frqc/internet-jp-forms.num)，用於生成詞頻，遵循 [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) 許可協議使用。
