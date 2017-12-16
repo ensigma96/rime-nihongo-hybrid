@@ -14,10 +14,11 @@
 若您的輸入法所用 librime 版本過舊，從而 opencc 版本過舊（低於 1.0），則 json 配置不被支持。這至少會使 `simplifier` 的 `jp_variants` 開關處於無效狀態。
 
 ## 許可協議
-* 除 `src/data` 下的文件外，其餘文件均按照 MIT License 發佈。
+* 除 `src/data` 及 `dist` 下的文件外，其餘文件均按照 MIT License 發佈。
 * `src/data/JMdict/JMdict_e.xml` 文件來自 [JMdict](http://www.edrdg.org/jmdict/j_jmdict.html)，按照 CC BY-SA 3.0 許可協議发布，参见 http://www.edrdg.org/edrdg/licence.html 。
   `dist/nihongo-hybrid.dict/nihongo-hybrid.jmdict.dict.yaml` 由上述文件轉換而得。
 * `src/data/mozc_dictionaries` 下的文件來自開源輸入法 [mozc](https://github.com/google/mozc)，授權信息見 `src/data/mozc_dictionaries/README.txt`。
   `dist/nihongo-hybrid.dict/nihongo-hybrid.mozc.dict.yaml` 由上述文件轉換而得。
 * `src/data/opencc/JPVariants.ocd` 來自 [OpenCC](https://github.com/BYVoid/OpenCC)，按照 Apache License 2.0 發佈。
   `dist/opencc/JPVariants.ocd` 與上述文件相同。
+* `src/data/internet-jp-forms.num` 來自該 [文件](http://corpus.leeds.ac.uk/frqc/internet-jp-forms.num)，用於生成詞頻，按照 [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) 許可協議發佈.
