@@ -1,4 +1,5 @@
 from utils.kana2rom import hiragana2rom
+from export import print_rimedict_with_freq
 import os
 import sys
 
@@ -18,7 +19,7 @@ def convert_file(filename):
             if temp_word != prev_word or temp_kana != prev_kana:
                 prev_word = temp_word
                 prev_kana = temp_kana
-                print(temp_word, hiragana2rom(temp_kana, style = 'hepburn'), sep = '\t')
+                print_rimedict_with_freq(temp_word, hiragana2rom(temp_kana, style = 'hepburn'))
 
 def main():
     for filename in sorted(os.listdir(mozc_dict_dir)):
