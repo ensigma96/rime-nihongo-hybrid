@@ -3,7 +3,7 @@
 
 ---
 name: nihongo-hybrid
-version: '0.3'
+version: '0.4'
 
 import_tables:
   - 'nihongo-hybrid.dict/nihongo-hybrid.mozc'
