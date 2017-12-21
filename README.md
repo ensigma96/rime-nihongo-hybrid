@@ -18,14 +18,4 @@ Deployment also varies across input methods. Usually, you can also find informat
 If your input method is using an ancient version of librime, hence an ancient version (<1.0) of opencc, then the json config may not be supported. This will at least make the `simplifier`'s `jp_variants` option ineffectual.
 
 ## License
-* All files other than those under `src/data/` and `dist/` are released under MIT License.
-* Files and folders under `src/data/`:
-  * `JMdict/JMdict_e.xml` is released by [JMDict Project](http://www.edrdg.org/jmdict/j_jmdict.html) under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license. See http://www.edrdg.org/edrdg/licence.html .
-  * Files under `mozc_dictionaries/` directory is part of [mozc](https://github.com/google/mozc). For license information, see `README.txt` under the same directory.
-  * `opencc/JPVariants.ocd` is part of [OpenCC](https://github.com/BYVoid/OpenCC) by BYVoid, which is released under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
-  * `internet-jp-forms.num` comes from the [Japanese frequency list](http://corpus.leeds.ac.uk/frqc/internet-jp-forms.num) by Serge Sharoff, and is used in accordance with [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) license. See [this link](http://corpus.leeds.ac.uk/list.html) for more information.
-* Files under `dist/`:
-  * `opencc/JPVariants.ocd` is the same file as `src/data/opencc/JPVariants.ocd`.
-  * `nihongo-hybrid.dict/nihongo-hybrid.jmdict.dict.yaml` is derived from JMdict (see above), and is released under CC BY-SA [3.0](https://creativecommons.org/licenses/by-sa/3.0/) or later.
-  * `nihongo-hybrid.dict/nihongo-hybrid.mozc.dict.yaml` is derived from mozc's dictionaries and the Japanese frquency list (see above). It is released under CC BY [2.5](https://creativecommons.org/licenses/by/2.5/) or later.
-  * All other files are under the MIT License.
+* All files other than those under `third_party/` and `dist/` are released under MIT License.
