@@ -1,11 +1,11 @@
-from utils.hiragana_katakana import katakana2hiragana
-from utils.hiragana_katakana import has_katakana
+from utils.hiragana_katakana import katakana2hiragana, hiragana2katakana
+import unittest
 
-def main():
-    print(katakana2hiragana('ファ 0 ぱ'))
-    print(has_katakana('あほ 1'))
-    print(has_katakana('アホ 1'))
-    print(has_katakana('棒をシリアナに'))
+class MyTest(unittest.TestCase):
+    def test_katakana2hiragana(self):
+        self.assertEqual(katakana2hiragana('サクラ'), 'さくら')
+    def test_hiragana2katakana(self):
+        self.assertEqual(hiragana2katakana('さくら'), 'サクラ')
 
 if __name__ == '__main__':
-    main()
+    unittest.main()
