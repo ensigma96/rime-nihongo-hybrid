@@ -8,7 +8,7 @@ tree = etree.parse(jmdict)
 final_list = []
 
 def to_rom(str):
-    return hiragana2rom(katakana2hiragana(str), style = 'hepburn')
+    return hiragana2rom(katakana2hiragana(str))
 
 for entry in tree.xpath('/JMdict/entry'):
     k_list = []
