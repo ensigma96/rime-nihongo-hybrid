@@ -23,7 +23,7 @@ def convert_file(filename):
 
 def main():
     for filename in sorted(os.listdir(mozc_dict_dir)):
-        if filename[:10] == 'dictionary':
+        if (filename == 'suffix.txt') or (filename[:10] == 'dictionary'):
             convert_file(mozc_dict_dir + '/' + filename)
 
 if __name__ == '__main__':
