@@ -10,7 +10,7 @@ readonly OPENCC="${STUB}/opencc"
 readonly CONVERTER="${SRC}/converter"
 
 readonly THIRD_PARTY="${DIR}/third_party"
-readonly TP_DATA="third_party/data"
+readonly TP_DATA="${THIRD_PARTY}/data"
 readonly OPENCC_JPVARIANTS_TEXT="${TP_DATA}/opencc/JPVariants.txt"
 readonly MOZC_DICT_DIR="${TP_DATA}/mozc_dictionaries"
 readonly JMDICT_E="${TP_DATA}/JMdict/JMdict_e.xml"
