@@ -11,7 +11,7 @@ Disclaimer: If you need some serious input methods for Japanese, then this might
 
 ### 1\. Copy the files
 
-Copy everything under `dist/` into Rime's user folder. Example: the user folder is `~/.config/ibus/rime/`, then `cp -vr dist/. ~/.config/ibus/rime/` will do the work.
+Copy everything under `dist/` into Rime's user folder. For example: the user folder is `~/.config/ibus/rime/`, then `cp -vr dist/. ~/.config/ibus/rime/` will do the work.
 
 The location of user directory is related to specific input methods (i.e. frontends of Rime). In most cases, information about it can be found either in Rime's [Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide) or in the documentation of the input method.
 
