@@ -5,6 +5,8 @@
 
 A Japanese input scheme & dictionary for [RIME](http://rime.im/).
 
+Disclaimer: If you need some serious input methods for Japanese, then this might not be the repository you are looking for. If you are already using Rime, and want to type something in Japanese without switching between input methods, you may give it a try.
+
 ## Usage
 
 ### 1\. Copy the files
