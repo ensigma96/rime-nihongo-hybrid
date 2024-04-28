@@ -5,8 +5,6 @@
 
 A Japanese input scheme & dictionary for [RIME](http://rime.im/).
 
-Disclaimer: If you need some serious input methods for Japanese, then this might not be the repository you are looking for. If you are already using Rime, and want to type something in Japanese without switching between input methods, you may give it a try.
-
 ## Usage
 
 ### 1\. Copy the files
@@ -18,10 +16,6 @@ The location of user directory is related to specific input methods (i.e. fronte
 ### 2\. Deploy
 
 Deployment also varies across input methods. Usually, you can also find information in the same place(s) above.
-
-### Note
-
-If your input method is using an ancient version of librime, hence an ancient version (<1.0) of opencc, then the json config may not be supported. This will at least make the `simplifier`'s `jp_variants` option ineffectual.
 
 ## License
 
