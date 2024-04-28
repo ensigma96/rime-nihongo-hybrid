@@ -6,7 +6,7 @@
 
 ### 一、复制文件
 
-将 `dist/` 文件夹中的内容复制到 Rime 的用户文件夹下。例如：用户文件夹为 `~/.config/ibus/rime/`，则相应的命令为 `cp -vr dist/. ~/.config/ibus/rime/`。
+从 https://github.com/sncix/rime-nihongo-hybrid/releases 下载 `dist.zip` 并解压；将 `dist/` 文件夹中的内容复制到 Rime 的用户文件夹下。例如：用户文件夹为 `~/.config/ibus/rime/`，则相应的命令为 `cp -vr dist/. ~/.config/ibus/rime/`。
 
 用户文件夹的位置与具体输入法（即 Rime 的前端）有关。多数情况下，可以在 [Rime 定制指南](https://github.com/rime/home/wiki/CustomizationGuide) 或相应输入法的文档中找到说明。
 

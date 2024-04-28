@@ -1,7 +1,7 @@
 # rime-nihongo-hybrid
 
-- 简体中文版指南 [→](https://github.com/ensigma96/rime-nihongo-hybrid/blob/master/README_zh-Hans.md)
-- 繁體中文版指南 [→](https://github.com/ensigma96/rime-nihongo-hybrid/blob/master/README_zh-Hant.md)
+- 简体中文版指南 [→](https://github.com/sncix/rime-nihongo-hybrid/blob/master/README_zh-Hans.md)
+- 繁體中文版指南 [→](https://github.com/sncix/rime-nihongo-hybrid/blob/master/README_zh-Hant.md)
 
 A Japanese input scheme & dictionary for [RIME](http://rime.im/).
 
@@ -9,7 +9,7 @@ A Japanese input scheme & dictionary for [RIME](http://rime.im/).
 
 ### 1\. Copy the files
 
-Copy everything under `dist/` into Rime's user folder. For example: the user folder is `~/.config/ibus/rime/`, then `cp -vr dist/. ~/.config/ibus/rime/` will do the work.
+Download `dist.zip` from https://github.com/sncix/rime-nihongo-hybrid/releases; unzip it, and then copy everything under `dist/` into Rime's user folder. For example: the user folder is `~/.config/ibus/rime/`, then `cp -vr dist/. ~/.config/ibus/rime/` will do the work.
 
 The location of user directory is related to specific input methods (i.e. frontends of Rime). In most cases, information about it can be found either in Rime's [Customization Guide](https://github.com/rime/home/wiki/CustomizationGuide) or in the documentation of the input method.
 
