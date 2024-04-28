@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly JMDICT_E_URI='ftp://ftp.monash.edu.au/pub/nihongo/JMdict_e.gz'
+readonly JMDICT_E_URI='ftp://ftp.edrdg.org/pub/Nihongo//JMdict_e.gz'
 readonly DIR=`pwd`
 readonly JMDICT_DIR="${DIR}/third_party/data/JMdict"
 readonly JMDICT_E="${JMDICT_DIR}/JMdict_e.xml"
