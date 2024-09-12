@@ -19,31 +19,31 @@ Deployment also varies across input methods. Usually, you can also find informat
 
 ## License
 
-- All files other than those under `third_party/` and `dist/` are released under MIT License.
-- Files under `third_party/`:
+- All files other than those under `data/` are released under MIT License.
+- Files under `data/`:
 
-  - `data/JMdict/JMdict_e.xml`
+  - `JMdict/JMdict_e.xml`
 
     - What: The JMdict (Japanese-Multilingual Dictionary) file, with only the English translations.
     - Author: The Electronic Dictionary Research and Development Group
     - Link: <http://www.edrdg.org/jmdict/j_jmdict.html>
     - License: [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/), see [this link](http://www.edrdg.org/edrdg/licence.html) for more information.
 
-  - `data/mozc_dictionaries/*`
+  - `mozc_dictionaries/*`
 
     - What: dictionary files of the input method [mozc](https://github.com/google/mozc)
     - Author: multiple authors
     - Link: <https://github.com/google/mozc/tree/master/src/data/dictionary_oss>
     - License: [mixed license](https://github.com/google/mozc/blob/master/src/data/dictionary_oss/README.txt)
 
-  - `data/internet-jp-forms.num`
+  - `internet-jp-forms.num`
 
     - What: a Japanese frequency list
     - Author: Serge Sharoff
     - Link: <http://corpus.leeds.ac.uk/frqc/internet-jp-forms.num>
     - License: [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/)
 
-  - `data/opencc/*`
+  - `opencc/*`
 
     - What: [opencc](https://github.com/BYVoid/OpenCC) dictionaries
     - Author: BYVoid

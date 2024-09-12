@@ -20,4 +20,4 @@
 
 ## 許可協議
 
-- 除 `third_party/` 及 `dist/` 下的文件外，其餘文件均按照 MIT License 發佈。
+- 除 `data/` 下的文件外，其餘文件均按照 MIT License 發佈。
