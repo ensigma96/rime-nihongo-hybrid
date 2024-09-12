@@ -11,6 +11,8 @@ jobs:
 
       - name: run
         run: |
+          sudo apt-get update
+          sudo apt-get -y install opencc
           pip install -r requirements.txt
           bash main.sh
 
